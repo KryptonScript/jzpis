@@ -1,91 +1,91 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: rgb(245, 220, 188);
-    overflow-x: hidden;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: rgb(245, 220, 188);
+  overflow-x: hidden;
 }
 
 .header {
-    display: flex;
-    align-items: stretch;
-    margin-bottom: 0;
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 0;
 }
 
 .logo,
 .prisoner_image {
-    width: 25%;
+  width: 25%;
 }
 
 .logo img,
 .prisoner_image img {
-    display: block;
-    width: 100%;
-    height: clamp(80px, 16vw, 135px);
-    object-fit: cover;
+  display: block;
+  width: 100%;
+  height: clamp(80px, 16vw, 135px);
+  object-fit: cover;
 }
 
 .title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    min-width: 0;
-    min-height: 80px;
-    background-color: rgb(200, 200, 238);
-    color: black;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  min-width: 0;
+  min-height: 80px;
+  background-color: rgb(200, 200, 238);
+  color: black;
+  text-align: center;
 }
 
 .title h1 {
-    margin: 0;
-    padding: 0.5rem;
-    font-size: clamp(1rem, 2.4vw, 2rem);
+  margin: 0;
+  padding: 0.5rem;
+  font-size: clamp(1rem, 2.4vw, 2rem);
 }
 
 .linknav {
-    margin: 0 0 1rem;
+  margin: 0 0 1rem;
 }
 
 .linknav > ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .linknav li {
-    position: relative;
-    list-style: none;
+  position: relative;
+  list-style: none;
 }
 
 .linknav a {
-    display: block;
-    padding: 0.75rem clamp(0.65rem, 2.5vw, 2rem);
-    background-color: rgb(251, 255, 0);
-    color: blue;
-    text-align: center;
-    text-decoration: none;
-    font-size: clamp(1rem, 2.2vw, 1.875rem);
-    font-weight: 540;
-    transition: background-color 0.2s ease;
+  display: block;
+  padding: 0.75rem clamp(0.65rem, 2.5vw, 2rem);
+  background-color: rgb(251, 255, 0);
+  color: blue;
+  text-align: center;
+  text-decoration: none;
+  font-size: clamp(1rem, 2.2vw, 1.875rem);
+  font-weight: 540;
+  transition: background-color 0.2s ease;
 }
 
 .linknav li a:hover {
-    background-color: rgb(0, 255, 234);
+  background-color: rgb(0, 255, 234);
 }
 
 .linknav li:hover > #languages,
 .linknav li:focus-within > #languages {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 #languages {
@@ -136,149 +136,161 @@ body {
 }
 
 .address {
-    width: min(50rem, calc(100% - 2rem));
-    margin: 0 auto 1rem;
-    padding: 0.75rem 1rem;
-    border: 5px dashed green;
-    text-align: center;
-    font-size: clamp(1rem, 2vw, 1.5rem);
+  width: min(50rem, calc(100% - 2rem));
+  margin: 0 auto 1rem;
+  padding: 0.75rem 1rem;
+  border: 5px dashed green;
+  text-align: center;
+  font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 .address address {
-    font-style: normal;
+  font-style: normal;
 }
 
 .address p {
-    margin: 0.5rem 0;
-    overflow-wrap: anywhere;
+  margin: 0.5rem 0;
+  overflow-wrap: anywhere;
 }
 
 .contact-intro {
-    font-size: 1.1em;
-    font-weight: bold;
+  font-size: 1.1em;
+  font-weight: bold;
 }
 
 .contact-label {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .contact-image {
-    display: block;
-    width: min(51%, 48rem);
-    max-width: calc(100% - 2rem);
-    height: auto;
-    margin: 0 auto 1rem;
+  display: block;
+  width: min(51%, 48rem);
+  max-width: calc(100% - 2rem);
+  height: auto;
+  margin: 0 auto 1rem;
 }
 
 .comment {
-    width: min(58rem, calc(100% - 2rem));
-    margin: 0 auto 1rem;
-    color: rgb(3, 3, 109);
-    text-align: center;
-    font-size: clamp(1rem, 2vw, 1.5rem);
+  width: min(58rem, calc(100% - 2rem));
+  margin: 0 auto 1rem;
+  color: rgb(3, 3, 109);
+  text-align: center;
+  font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 .comment fieldset {
-    min-width: 0;
-    margin: 0;
-    padding: clamp(0.75rem, 3vw, 1.5rem);
-    border: 2px groove;
-    border-radius: 2rem;
+  min-width: 0;
+  margin: 0;
+  padding: clamp(0.75rem, 3vw, 1.5rem);
+  border: 2px groove;
+  border-radius: 2rem;
 }
 
 .comment legend {
-    max-width: 100%;
-    padding: 0 0.5rem;
+  max-width: 100%;
+  padding: 0 0.5rem;
 }
 
 .form-row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .form-row label {
-    flex: 0 1 15rem;
+  flex: 0 1 15rem;
 }
 
 .form-row input,
 .form-row textarea {
-    width: min(100%, 28rem);
-    min-width: 0;
-    font: inherit;
+  width: min(100%, 28rem);
+  min-width: 0;
+  font: inherit;
 }
 
 .form-row input {
-    min-height: 2.5rem;
+  min-height: 2.5rem;
 }
 
 .form-row textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 .form-submit {
-    text-align: center;
+  text-align: center;
 }
 
 .form-submit input {
-    padding: 0.5rem 1.25rem;
-    border: 0;
-    border-radius: 50px;
-    color: rgb(3, 3, 109);
-    font: inherit;
-    cursor: pointer;
+  padding: 0.5rem 1.25rem;
+  border: 0;
+  border-radius: 50px;
+  color: rgb(3, 3, 109);
+  font: inherit;
+  cursor: pointer;
 }
 
 footer {
-    margin-top: auto;
-    background-color: rgb(41, 41, 41);
-    color: white;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 17px;
+  margin-top: auto;
+  background-color: rgb(41, 41, 41);
+  color: white;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
 }
 
 @media (max-width: 600px) {
-    .logo,
-    .prisoner_image {
-        width: 20%;
-    }
+  .header {
+    grid-template-areas:
+      "title title"
+      "logo prisoner";
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
-    .title {
-        width: 60%;
-    }
+  .logo {
+    grid-area: logo;
+  }
 
-    .title h1 {
-        font-size: clamp(0.85rem, 3.4vw, 1.25rem);
-    }
+  .title {
+    grid-area: title;
+    min-height: 110px;
+  }
 
-    .linknav > ul {
-        gap: 0.15rem;
-    }
+  .prisoner_image {
+    grid-area: prisoner;
+  }
 
-    .linknav a {
-        padding: 0.65rem clamp(0.45rem, 2vw, 0.75rem);
-        font-size: clamp(0.9rem, 3.4vw, 1.2rem);
-    }
+  .logo img,
+  .prisoner_image img {
+    height: clamp(90px, 24vw, 150px);
+  }
 
-    .contact-image {
-        width: 100%;
-    }
+  .linknav > ul {
+    gap: 0.15rem;
+  }
 
-    .form-row {
-        align-items: stretch;
-        flex-direction: column;
-        gap: 0.4rem;
-    }
+  .linknav a {
+    padding: 0.65rem clamp(0.45rem, 2vw, 0.75rem);
+    font-size: clamp(0.9rem, 3.4vw, 1.2rem);
+  }
 
-    .form-row label {
-        flex-basis: auto;
-    }
+  .contact-image {
+    width: 100%;
+  }
 
-    .form-row input,
-    .form-row textarea {
-        width: 100%;
-    }
+  .form-row {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .form-row label {
+    flex-basis: auto;
+  }
+
+  .form-row input,
+  .form-row textarea {
+    width: 100%;
+  }
 }

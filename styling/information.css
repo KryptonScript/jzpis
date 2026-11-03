@@ -131,7 +131,7 @@ img {
     gap: clamp(1rem, 3vw, 2rem);
     width: min(100% - 2rem, 1400px);
     margin: 0 auto;
-    padding: 0 0 2rem;
+    padding: 2rem;
 }
 
 .aside-class {
